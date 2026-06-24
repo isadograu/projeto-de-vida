@@ -1,58 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Portal de Matemática - 3º ano C</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <section class="conteudo-principal">
-        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
-        <div class="conteudo">
-            <div class="botoes">
-              <button class="botao ativo">Cursos na Alura</button>
-              <button class="botao">Criar projetos em Javascript</button>
-              <button class="botao">Criar um portfolio</button>
-              <button class="botao">Atualizar meu currículo</button>
+        <!--Banner principal-->
+        <div class="banner">
+            <div class="banner-conteudo">
+                <h1> Conectando Matemática e Tecnologia</h1>
+                <p>Espaço digital da engenharia e ciências da natureza</p>
+                <!--Botão interativo que abre o pop-up-->
+                <a href="#popup-aviso" class="botao-banner">Ver aviso importante</a>
             </div>
-            <div class="abas-textos">
-              <div class="aba-conteudo">
-                <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
-                <h4 class="aba-conteudo-titulo-secundario">
-                  Tempo para completar o objetivo
-                </h4>
-              </div>
-              <div class="aba-conteudo">
-                <h3 class="aba-conteudo-titulo-principal">
-                  Criar 5 projetos em Javascript
-                </h3>
-                <h4 class="aba-conteudo-titulo-secundario">
-                  Tempo para completar o objetivo
-                </h4>
-              </div>
-              <div class="aba-conteudo">
-                <h3 class="aba-conteudo-titulo-principal">
-                  Criar um portfolio com os meus 3 melhores projetos
-                </h3>
-                <h4 class="aba-conteudo-titulo-secundario">
-                  Tempo para completar o objetivo
-                </h4>
-              </div>
-              <div class="aba-conteudo">
-                <h3 class="aba-conteudo-titulo-principal">
-                  Atualizar meu curriculo com os certificados da Alura
-                </h3>
-                <h4 class="aba-conteudo-titulo-secundario">
-                  Tempo para completar o objetivo
-                </h4>
-              </div>
-            </div>
-          </div>
-    </section>
-</body>
-<script src="main.js"></script>
+        </div>
 
+        <!--Corpo do site(container)-->
+        <div class="container">
+
+            <!--Serie de botões-->
+            <div class="grade-botoes">
+                <button class="botao-menu azul">Geometria</button>
+                <button class="botao-menu verde">Algebra</button>
+                <button class="botao-menu roxo">Estatistica</button>
+            </div>
+
+            <hr>
+
+            <!--Sistema de abas em css-->
+            <h2>Conteúdos Disponíveis</h2>
+            <div class="abas-sistema">
+                <!--aba 1 -->
+                <input type="radio" name="abas" id="aba1" checked>
+                    <label for="aba1">Semestre 1</label>
+                    <div class="aba-conteudo">
+                        <h3>Análise combinatória</h3>
+                        <p>Principio fundamental da contagem, permutações e combinações aplicadas.</p>
+                    </div>
+
+                    <!--Aba2-->
+                    <input type="radio" name="abas" id="aba2">
+                        <label for="aba2">Semestre 2</label>
+                        <div class="aba-conteudo">
+                            <h3>Probabilidade</h3>
+                            <p>Calculo de chances, independentes e aplicações no cotidiano.</p>
+                        </div>
+            </div>
+        </div>
+        <!--Pop-up-->
+        <div id="popup-aviso" class="fundo-popup">
+            <div class="janela-popup">
+                <h2>Aviso da turma</h2>
+                <p>Lembrete: a entrega do projeto desenvolvimento web vale nota parcial para o trimestre!</p>
+                <!--Botao de fechar-->
+                <a href="#" class="botao-fechar">Fechar aviso</a>
+            </div>
+        </div>
+    </body>
 </html>
